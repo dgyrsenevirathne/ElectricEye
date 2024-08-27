@@ -1,0 +1,58 @@
+﻿@model IEnumerable<ElectricEye.Web.Models.EnergyUsage>
+
+@{
+    ViewData["Title"] = "Historical Data";
+}
+
+<div class="container mt-4">
+    <h1 class="display-4 text-center mb-4">Historical Data</h1>
+    <p class="lead text-center mb-5">
+        Analyze your energy usage over time with comprehensive reports and insights.
+    </p>
+
+    <!-- Display historical data in a table -->
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>Timestamp</th>
+                <th>Location</th>
+                <th>Consumption (kWh)</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.Any())
+            {
+                foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.UserName</td>
+                        <td>@item.Timestamp</td>
+                        <td>@item.Location</td>
+                        <td>@item.Consumption</td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="3" class="text-center">No historical data available.</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<style>
+    .table {
+        margin-top: 20px;
+    }
+
+    .container {
+        margin-top: 20px;
+    }
+
+    h1 {
+        margin-bottom: 20px;
+    }
+</style>

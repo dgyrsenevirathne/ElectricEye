@@ -1,0 +1,54 @@
+﻿@model ElectricEye.Web.Models.AlertSetting
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create Alert Setting</h1>
+
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="Create">
+            <div class="form-group">
+                <label asp-for="UserId" class="control-label"></label>
+                <input asp-for="UserId" class="form-control" />
+                <span asp-validation-for="UserId" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Location" class="control-label"></label>
+                <input asp-for="Location" class="form-control" />
+                <span asp-validation-for="Location" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Threshold" class="control-label"></label>
+                <input asp-for="Threshold" class="form-control" type="number" step="0.01" />
+                <span asp-validation-for="Threshold" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="AlertType" class="control-label"></label>
+                <select asp-for="AlertType" class="form-control">
+                    <option>Email</option>
+                    <option>SMS</option>
+                </select>
+                <span asp-validation-for="AlertType" class="text-danger"></span>
+            </div>
+            <br />
+
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+<br />
+<div>
+    <!-- Added Bootstrap button classes to style the "Back to List" link -->
+    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+</div>
+
+@section Scripts {
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+}

@@ -1,0 +1,35 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using Microsoft.AspNetCore.Mvc.Rendering
+@using Microsoft.AspNetCore.Mvc.ViewFeatures
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+<ul class="navbar-nav ml-auto">
+    @if (SignInManager.IsSignedIn(User))
+    {
+        <li class="nav-item">
+            <a class="nav-link text-light" href="@Url.Action("Logout", "Account")">
+                <i class="bi bi-box-arrow-right"></i> Logout
+            </a>
+        </li>
+        <li class="nav-item">
+            <span class="navbar-text text-light d-flex align-items-center">
+                <i class="bi bi-person-circle mr-2"></i>
+                @UserManager.GetUserName(User)
+            </span>
+        </li>
+    }
+    else
+    {
+        <li class="nav-item">
+            <a class="nav-link text-light" href="@Url.Action("Login", "Account")">
+                <i class="bi bi-box-arrow-in-right"></i> Login
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-light" href="@Url.Action("Register", "Account")">
+                <i class="bi bi-person-plus"></i> Register
+            </a>
+        </li>
+    }
+</ul>

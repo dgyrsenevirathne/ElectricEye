@@ -1,0 +1,34 @@
+﻿@model IEnumerable<ElectricEye.Web.Models.AlertSetting>
+
+@{
+    ViewData["Title"] = "Alert Settings";
+}
+
+<h1>Alert Settings</h1>
+
+<table class="table table-striped table-bordered" id="alertSettingsTable">
+    <thead>
+        <tr>
+            <th>Location</th>
+            <th>Threshold</th>
+            <th>Alert Type</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var alertSetting in Model)
+        {
+            <tr>
+                <td>@alertSetting.Location</td>
+                <td>@alertSetting.Threshold</td>
+                <td>@alertSetting.AlertType</td>
+                <td>
+                    <a href="@Url.Action("Edit", "AlertSettings", new { id = alertSetting.Id })" class="btn btn-warning btn-sm">Edit</a>
+                    <a href="@Url.Action("Delete", "AlertSettings", new { id = alertSetting.Id })" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this alert setting?');">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a href="@Url.Action("Create", "AlertSettings")" class="btn btn-primary">Add New Alert</a>

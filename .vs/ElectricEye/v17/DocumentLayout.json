@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Yasith Reshan\\Desktop\\test1\\ElectricEye\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{43C5CE84-C455-4E30-82DE-440C3D17F784}|ElectricEye.Web\\ElectricEye.Web.csproj|c:\\users\\yasith reshan\\desktop\\test1\\electriceye\\electriceye.web\\views\\energyusage\\historicaldata.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{43C5CE84-C455-4E30-82DE-440C3D17F784}|ElectricEye.Web\\ElectricEye.Web.csproj|solutionrelative:electriceye.web\\views\\energyusage\\historicaldata.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43C5CE84-C455-4E30-82DE-440C3D17F784}|ElectricEye.Web\\ElectricEye.Web.csproj|c:\\users\\yasith reshan\\desktop\\test1\\electriceye\\electriceye.web\\controllers\\energyusagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43C5CE84-C455-4E30-82DE-440C3D17F784}|ElectricEye.Web\\ElectricEye.Web.csproj|solutionrelative:electriceye.web\\controllers\\energyusagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43C5CE84-C455-4E30-82DE-440C3D17F784}|ElectricEye.Web\\ElectricEye.Web.csproj|c:\\users\\yasith reshan\\desktop\\test1\\electriceye\\electriceye.web\\models\\energyusage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43C5CE84-C455-4E30-82DE-440C3D17F784}|ElectricEye.Web\\ElectricEye.Web.csproj|solutionrelative:electriceye.web\\models\\energyusage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43C5CE84-C455-4E30-82DE-440C3D17F784}|ElectricEye.Web\\ElectricEye.Web.csproj|c:\\users\\yasith reshan\\desktop\\test1\\electriceye\\electriceye.web\\views\\energyusage\\realtimetracking.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{43C5CE84-C455-4E30-82DE-440C3D17F784}|ElectricEye.Web\\ElectricEye.Web.csproj|solutionrelative:electriceye.web\\views\\energyusage\\realtimetracking.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43C5CE84-C455-4E30-82DE-440C3D17F784}|ElectricEye.Web\\ElectricEye.Web.csproj|c:\\users\\yasith reshan\\desktop\\test1\\electriceye\\electriceye.web\\views\\energyusage\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{43C5CE84-C455-4E30-82DE-440C3D17F784}|ElectricEye.Web\\ElectricEye.Web.csproj|solutionrelative:electriceye.web\\views\\energyusage\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43C5CE84-C455-4E30-82DE-440C3D17F784}|ElectricEye.Web\\ElectricEye.Web.csproj|c:\\users\\yasith reshan\\desktop\\test1\\electriceye\\electriceye.web\\views\\energyusage\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{43C5CE84-C455-4E30-82DE-440C3D17F784}|ElectricEye.Web\\ElectricEye.Web.csproj|solutionrelative:electriceye.web\\views\\energyusage\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43C5CE84-C455-4E30-82DE-440C3D17F784}|ElectricEye.Web\\ElectricEye.Web.csproj|c:\\users\\yasith reshan\\desktop\\test1\\electriceye\\electriceye.web\\views\\energyusage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{43C5CE84-C455-4E30-82DE-440C3D17F784}|ElectricEye.Web\\ElectricEye.Web.csproj|solutionrelative:electriceye.web\\views\\energyusage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HistoricalData.cshtml",
+              "DocumentMoniker": "C:\\Users\\Yasith Reshan\\Desktop\\test1\\ElectricEye\\ElectricEye.Web\\Views\\EnergyUsage\\HistoricalData.cshtml",
+              "RelativeDocumentMoniker": "ElectricEye.Web\\Views\\EnergyUsage\\HistoricalData.cshtml",
+              "ToolTip": "C:\\Users\\Yasith Reshan\\Desktop\\test1\\ElectricEye\\ElectricEye.Web\\Views\\EnergyUsage\\HistoricalData.cshtml",
+              "RelativeToolTip": "ElectricEye.Web\\Views\\EnergyUsage\\HistoricalData.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABAAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-27T06:12:34.076Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RealTimeTracking.cshtml",
+              "DocumentMoniker": "C:\\Users\\Yasith Reshan\\Desktop\\test1\\ElectricEye\\ElectricEye.Web\\Views\\EnergyUsage\\RealTimeTracking.cshtml",
+              "RelativeDocumentMoniker": "ElectricEye.Web\\Views\\EnergyUsage\\RealTimeTracking.cshtml",
+              "ToolTip": "C:\\Users\\Yasith Reshan\\Desktop\\test1\\ElectricEye\\ElectricEye.Web\\Views\\EnergyUsage\\RealTimeTracking.cshtml",
+              "RelativeToolTip": "ElectricEye.Web\\Views\\EnergyUsage\\RealTimeTracking.cshtml",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAAC8AAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-27T06:05:27.086Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Yasith Reshan\\Desktop\\test1\\ElectricEye\\ElectricEye.Web\\Views\\EnergyUsage\\Create.cshtml",
+              "RelativeDocumentMoniker": "ElectricEye.Web\\Views\\EnergyUsage\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Yasith Reshan\\Desktop\\test1\\ElectricEye\\ElectricEye.Web\\Views\\EnergyUsage\\Create.cshtml",
+              "RelativeToolTip": "ElectricEye.Web\\Views\\EnergyUsage\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-27T05:44:35.355Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Yasith Reshan\\Desktop\\test1\\ElectricEye\\ElectricEye.Web\\Views\\EnergyUsage\\Index.cshtml",
+              "RelativeDocumentMoniker": "ElectricEye.Web\\Views\\EnergyUsage\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Yasith Reshan\\Desktop\\test1\\ElectricEye\\ElectricEye.Web\\Views\\EnergyUsage\\Index.cshtml",
+              "RelativeToolTip": "ElectricEye.Web\\Views\\EnergyUsage\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-27T05:43:19.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Yasith Reshan\\Desktop\\test1\\ElectricEye\\ElectricEye.Web\\Views\\EnergyUsage\\Edit.cshtml",
+              "RelativeDocumentMoniker": "ElectricEye.Web\\Views\\EnergyUsage\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Yasith Reshan\\Desktop\\test1\\ElectricEye\\ElectricEye.Web\\Views\\EnergyUsage\\Edit.cshtml",
+              "RelativeToolTip": "ElectricEye.Web\\Views\\EnergyUsage\\Edit.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAwAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-27T05:15:35.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EnergyUsage.cs",
+              "DocumentMoniker": "C:\\Users\\Yasith Reshan\\Desktop\\test1\\ElectricEye\\ElectricEye.Web\\Models\\EnergyUsage.cs",
+              "RelativeDocumentMoniker": "ElectricEye.Web\\Models\\EnergyUsage.cs",
+              "ToolTip": "C:\\Users\\Yasith Reshan\\Desktop\\test1\\ElectricEye\\ElectricEye.Web\\Models\\EnergyUsage.cs",
+              "RelativeToolTip": "ElectricEye.Web\\Models\\EnergyUsage.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T05:04:42.383Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EnergyUsageController.cs",
+              "DocumentMoniker": "C:\\Users\\Yasith Reshan\\Desktop\\test1\\ElectricEye\\ElectricEye.Web\\Controllers\\EnergyUsageController.cs",
+              "RelativeDocumentMoniker": "ElectricEye.Web\\Controllers\\EnergyUsageController.cs",
+              "ToolTip": "C:\\Users\\Yasith Reshan\\Desktop\\test1\\ElectricEye\\ElectricEye.Web\\Controllers\\EnergyUsageController.cs",
+              "RelativeToolTip": "ElectricEye.Web\\Controllers\\EnergyUsageController.cs",
+              "ViewState": "AQIAAHsAAAAAAAAAAAAIwIYAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T05:01:54.253Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-3">Welcome to ElectricEye</h1>
+    <p class="lead">Your go-to solution for monitoring and managing energy usage.</p>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 style="color: black;">Monitor Energy Efficiently</h2>
+                    <p style="color: black;">Track your energy consumption with real-time data and historical analytics.</p>
+
+                    <a href="@Url.Action("Index", "EnergyUsage")" class="btn btn-primary btn-lg btn-green-hover">Get Started</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <!-- Features Section -->
+    <div class="features-section py-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <a href="@Url.Action("RealTimeData", "EnergyUsage")" class="feature-link">
+                        <div class="feature-card">
+                            <i class="bi bi-speedometer2"></i>
+                            <h3>Real-Time Tracking</h3>
+                            <p>Instantly view your current energy consumption.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="@Url.Action("HistoricalData", "EnergyUsage")" class="feature-link">
+                        <div class="feature-card">
+                            <i class="bi bi-calendar-range"></i>
+                            <h3>Historical Data</h3>
+                            <p>Analyze your energy usage over time with comprehensive reports.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-4">
+                    <a href="@Url.Action("Index", "AlertSettings")" class="feature-link">
+                    <div class="feature-card">
+                        <i class="bi bi-bell"></i>
+                        <h3>Custom Alerts</h3>
+                        <p>Set up alerts to get notified about abnormal consumption patterns.</p>
+                    </div></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Call-to-Action -->
+    <div class="cta-section bg-primary text-white text-center py-4">
+        <h2>Ready to take control of your energy?</h2>
+        <a href="@Url.Action("Index", "EnergyUsage")" class="btn btn-light btn-lg">Explore Features</a>
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const ctaButton = document.querySelector(".cta-section .btn");
+
+        ctaButton.addEventListener("mouseover", function () {
+            ctaButton.classList.add("btn-hover");
+        });
+
+        ctaButton.addEventListener("mouseout", function () {
+            ctaButton.classList.remove("btn-hover");
+        });
+    });
+</script>
+
+

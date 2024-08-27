@@ -1,0 +1,401 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.title-spacing {
+    margin-bottom: 30px;
+}
+
+/* site.css */
+
+.hero-section {
+    background: url('/images/hero1-background.jpeg') no-repeat center center;
+    background-size: cover;
+    padding: 60px 0;
+    color: #fff;
+}
+
+
+
+
+    .hero-section h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+
+    .hero-section p {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+
+    .hero-section .btn-primary {
+        padding: 10px 20px;
+        font-size: 1.1rem;
+        border-radius: 50px;
+    }
+
+/* Features Section */
+
+.features-section {
+    background-color: #f8f9fa;
+}
+
+.feature-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+    .feature-card i {
+        font-size: 3rem;
+        color: #007bff;
+        margin-bottom: 15px;
+    }
+
+    .feature-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+/* Call-to-Action Section */
+
+.cta-section {
+    background: rgba(0, 123, 255, 0.8);
+    color: #fff;
+    border-radius: 10px;
+    padding: 40px 20px;
+}
+
+    .cta-section .btn-light {
+        background-color: #fff;
+        color: #007bff;
+        border-radius: 50px;
+        padding: 10px 20px;
+        font-size: 1.1rem;
+    }
+
+        .cta-section .btn-light:hover {
+            background-color: #f8f9fa;
+        }
+
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.alert-success {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+
+
+/*new add*/
+
+.privacy-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+    .privacy-container h1 {
+        font-size: 2.5rem;
+        color: #007bff;
+        text-align: center;
+        margin-bottom: 20px;
+        animation: fadeInDown 1s ease;
+    }
+
+.policy-details h2 {
+    font-size: 1.8rem;
+    color: #555;
+    margin-top: 20px;
+    animation: fadeInLeft 1s ease;
+}
+
+.policy-details p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+    animation: fadeInRight 1s ease;
+}
+
+.policy-cta {
+    text-align: center;
+    margin-top: 30px;
+    animation: fadeInUp 1s ease;
+}
+
+    .policy-cta h3 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+        color: #333;
+    }
+
+    .policy-cta .btn {
+        font-size: 1.1rem;
+        padding: 10px 20px;
+        border-radius: 50px;
+        background-color: #007bff;
+        color: #fff;
+    }
+
+        .policy-cta .btn:hover {
+            background-color: #0056b3;
+        }
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*Contact us*/
+
+
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+    .contact-container h1 {
+        margin-bottom: 20px;
+    }
+
+    .contact-container form {
+        background-color: #f8f9fa;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-container .form-group {
+        margin-bottom: 15px;
+    }
+
+    .contact-container .btn-primary {
+        font-size: 1.1rem;
+    }
+
+.cta-section {
+    animation: fadeIn 3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+/*New*/
+
+.cta-section .btn {
+    transition: transform 0.3s ease-in-out;
+}
+
+.cta-section .btn-hover {
+    transform: scale(1.1);
+}
+
+
+/*New add for nav*/
+
+.nav-link {
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s, background-color 0.3s; /* Smooth transitions */
+}
+
+    .nav-link:hover {
+        color: #f8f9fa; /* Change text color on hover */
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Add a shadow */
+        background-color: rgba(255, 255, 255, 0.1); /* Subtle background change */
+    }
+
+    .nav-link.active {
+        color: #ffc107; /* Highlight color for active link */
+        font-weight: bold; /* Bold active link text */
+    }
+
+    .nav-link:active::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 300%;
+        height: 300%;
+        background: rgba(255, 255, 255, 0.5); /* Ripple effect */
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        transition: all 0.6s ease; /* Extended transition duration */
+        z-index: 1;
+        pointer-events: none;
+    }
+
+.nav-link-clicked {
+    animation: clickAnimation 0.5s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Box shadow on click */
+}
+
+@keyframes clickAnimation {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-link {
+        font-size: 0.9rem; /* Adjust font size for smaller screens */
+    }
+}
+
+
+
+/*Card New*/
+
+.feature-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.feature-card {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+    display: block;
+}
+
+    .feature-card:hover {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        background-color: #f8f9fa;
+    }
+
+
+
+/* Add this to your site's CSS file or within a <style> tag in your view */
+
+.btn-green-hover {
+    transition: background-color 0.3s ease;
+}
+
+    .btn-green-hover:hover {
+        background-color: #28a745; /* Green color */
+        border-color: #28a745; /* Match border color with background color */
+        color: white; /* Ensure text is readable */
+    }
+
+
+/* Adjust spacing around nav items */
+.navbar-nav .nav-item {
+    margin-left: 10px; /* Adjust the left margin as needed */
+    margin-right: 10px; /* Adjust the right margin as needed */
+}
+
+/* Align text and icons */
+.navbar-nav .nav-link {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-text {
+    margin-left: 15px; /* Space between username and logout link */
+    font-size: 0.9rem; /* Adjust font size as needed */
+}
+
+
+/*newwww*/
+
+
+    .navbar-text i {
+        font-size: 1.6rem; /* Adjust icon size as needed */
+    }
+
+.navbar-text {
+    font-size: 0.9rem; /* Adjust text size if needed */
+}

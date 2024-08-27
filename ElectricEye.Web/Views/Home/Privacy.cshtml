@@ -1,0 +1,42 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<div class="privacy-container">
+    <h1>@ViewData["Title"]</h1>
+
+    <section class="policy-intro">
+        <p>We value your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, and safeguard your data.</p>
+    </section>
+
+    <section class="policy-details">
+        <h2>Information We Collect</h2>
+        <p>We may collect various types of information including your name, email address, and usage data to provide a better user experience.</p>
+
+        <h2>How We Use Your Information</h2>
+        <p>Your information is used to personalize your experience, improve our website, and send periodic emails about updates.</p>
+
+        <h2>Data Security</h2>
+        <p>We implement advanced security measures to ensure that your personal information is secure.</p>
+
+        <h2>Your Rights</h2>
+        <p>You have the right to access, correct, or delete your personal data. Contact us if you have any concerns.</p>
+    </section>
+
+    <section class="policy-cta">
+        <h3>Need more information?</h3>
+        <a href="@Url.Action("Index", "ContactUs")" class="btn btn-primary">Contact Us</a>
+    </section>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const ctaBtn = document.querySelector(".policy-cta .btn");
+        ctaBtn.addEventListener("mouseenter", function () {
+            ctaBtn.style.backgroundColor = "#0056b3";
+        });
+
+        ctaBtn.addEventListener("mouseleave", function () {
+            ctaBtn.style.backgroundColor = "#007bff";
+        });
+    });
+</script>

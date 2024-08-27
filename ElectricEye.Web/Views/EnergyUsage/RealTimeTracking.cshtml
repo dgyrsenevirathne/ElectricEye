@@ -1,0 +1,162 @@
+﻿@{
+    ViewData["Title"] = "Real-Time Tracking";
+}
+
+<!-- Container for the main content -->
+<div class="container">
+    <!-- Header section -->
+    <div class="text-center py-5">
+        <h1 class="display-4 mb-4">Real-Time Energy Tracking</h1>
+        <p class="lead mb-4">Monitor your energy consumption with up-to-date charts and analytics.</p>
+    </div>
+
+    <!-- Real-Time Data Section -->
+    <div class="real-time-data mb-5">
+        <div class="row">
+            <!-- Current Usage Section -->
+            <div class="col-md-6 mb-4">
+                <h2 class="mb-3">Current Usage</h2>
+                <p>View the current energy usage of your devices and appliances.</p>
+                <!-- Chart for current usage -->
+                <div id="current-usage-chart" class="chart-container"></div>
+            </div>
+
+            <!-- Live Analytics Section -->
+            <div class="col-md-6 mb-4">
+                <h2 class="mb-3">Live Analytics</h2>
+                <p>Analyze live data and trends to optimize your energy usage.</p>
+                <!-- Chart for live analytics -->
+                <div id="live-analytics-chart" class="chart-container"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call-to-Action -->
+    <div class="cta-section text-center py-4 bg-primary text-white rounded shadow-sm">
+        <h2 class="mb-3">Need More Information?</h2>
+        <a href="@Url.Action("Index", "EnergyUsage")" class="btn btn-light btn-lg">Back to Dashboard</a>
+    </div>
+</div>
+
+<!-- Include Chart.js for rendering charts -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        function fetchData() {
+            $.ajax({
+                url: '@Url.Action("RealTimeData", "EnergyUsage")',
+                method: 'GET',
+                success: function (data) {
+                    // Process data for charts
+                    const labels = data.map(item => item.Timestamp);
+                    const consumptionData = data.map(item => item.Consumption);
+
+                    // Update Current Usage Chart
+                    new Chart(document.getElementById('current-usage-chart').getContext('2d'), {
+                        type: 'bar',
+                        data: {
+                            labels: labels,
+                            datasets: [{
+                                label: 'Current Usage (kWh)',
+                                data: consumptionData,
+                                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                                borderColor: 'rgba(75, 192, 192, 1)',
+                                borderWidth: 1
+                            }]
+                        },
+                        options: {
+                            responsive: true,
+                            plugins: {
+                                legend: {
+                                    display: true,
+                                    position: 'top'
+                                },
+                                tooltip: {
+                                    callbacks: {
+                                        label: function (tooltipItem) {
+                                            return tooltipItem.dataset.label + ': ' + tooltipItem.raw.toFixed(2) + ' kWh';
+                                        }
+                                    }
+                                }
+                            },
+                            scales: {
+                                y: {
+                                    beginAtZero: true,
+                                    ticks: {
+                                        callback: function (value) { return value + ' kWh'; }
+                                    }
+                                }
+                            }
+                        }
+                    });
+
+                    // Update Live Analytics Chart
+                    new Chart(document.getElementById('live-analytics-chart').getContext('2d'), {
+                        type: 'line',
+                        data: {
+                            labels: labels,
+                            datasets: [{
+                                label: 'Energy Consumption Over Time (kWh)',
+                                data: consumptionData,
+                                backgroundColor: 'rgba(153, 102, 255, 0.2)',
+                                borderColor: 'rgba(153, 102, 255, 1)',
+                                borderWidth: 2
+                            }]
+                        },
+                        options: {
+                            responsive: true,
+                            plugins: {
+                                legend: {
+                                    display: true,
+                                    position: 'top'
+                                },
+                                tooltip: {
+                                    callbacks: {
+                                        label: function (tooltipItem) {
+                                            return tooltipItem.dataset.label + ': ' + tooltipItem.raw.toFixed(2) + ' kWh';
+                                        }
+                                    }
+                                }
+                            },
+                            scales: {
+                                y: {
+                                    beginAtZero: true,
+                                    ticks: {
+                                        callback: function (value) { return value + ' kWh'; }
+                                    }
+                                }
+                            }
+                        }
+                    });
+                }
+            });
+        }
+
+        // Fetch data initially
+        fetchData();
+
+        // Optionally, refresh data at intervals
+        setInterval(fetchData, 60000); // Refresh every minute
+    });
+</script>
+
+<!-- Custom CSS -->
+<style>
+    .chart-container {
+        position: relative;
+        height: 300px;
+        width: 100%;
+        background: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .cta-section {
+        background: #007bff;
+        color: #fff;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+</style>
